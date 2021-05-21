@@ -62,6 +62,6 @@
     "ts-mocha": "^8.0.0"
   },
   "dependencies": {
-    "openapi-validator": "^0.13.0"
+    "openapi-validator": "bfreuden/openapi-validator"
   }
 }
