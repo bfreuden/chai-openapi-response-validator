@@ -14,7 +14,7 @@ jobs:
           node-version: 12
       - run: npm ci
         env:
-          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_PACKAGES}}
+          NODE_AUTH_TOKEN: ${{secrets.READ_PACKAGES}}
       #- run: npm test
 
   publish-gpr:
