@@ -1,29 +1,16 @@
 {
-  "name": "chai-openapi-response-validator",
-  "version": "0.13.0",
+  "name": "@bfreuden/chai-openapi-response-validator",
+  "version": "0.13.1",
   "description": "Use Chai to assert that HTTP responses satisfy an OpenAPI spec",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "clean": "rimraf dist",
-    "clean:openapi-validator": "cd ../openapi-validator && yarn clean",
-    "format": "prettier --write ../../ --ignore-path ../../.prettierignore",
-    "lint": "tsc --noEmit --project tsconfig.eslint.json && eslint .",
-    "lint:fix": "yarn lint --fix",
-    "build": "tsc",
-    "test": "ts-mocha --extension ts --recursive",
-    "test:watch": "yarn test --watch",
-    "test:coverage": "yarn clean && yarn clean:openapi-validator && nyc yarn test && nyc report --reporter=lcov && nyc check-coverage",
-    "test:coverage:browse": "yarn test:coverage; open ../coverage/lcov-report/index.html",
-    "test:ci": "yarn format && yarn lint && yarn test:coverage",
-    "prepack": "yarn build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/openapi-library/OpenAPIValidators/tree/master/packages/chai-openapi-response-validator",
-  "author": "OpenApiChai <openapichai@gmail.com>",
-  "contributors": [
-    "Jonny Spruce <jspruce94@gmail.com>",
-    "rwalle61 <richard.lh.waller@gmail.com>"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfreuden/chai-openapi-response-validator.git"
+  },
   "license": "MIT",
   "keywords": [
     "chai",
@@ -33,10 +20,7 @@
     "openapi",
     "validate"
   ],
-  "bugs": {
-    "url": "https://github.com/openapi-library/OpenAPIValidators/issues"
-  },
-  "homepage": "https://github.com/openapi-library/OpenAPIValidators/tree/master/packages/chai-openapi-response-validator#readme",
+  "homepage": "https://github.com/bfreuden/chai-openapi-response-validator#readme",
   "files": [
     "dist"
   ],
@@ -62,6 +46,6 @@
     "ts-mocha": "^8.0.0"
   },
   "dependencies": {
-    "openapi-validator": "bfreuden/openapi-validator"
+    "@bfreuden/openapi-validator": "0.13.1"
   }
 }
