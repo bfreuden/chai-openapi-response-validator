@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const openapi_validator_1 = require("openapi-validator");
+const openapi_validator_1 = require("@bfreuden/openapi-validator");
 const utils_1 = require("../utils");
 function default_1(chai, openApiSpec) {
     const { Assertion } = chai;

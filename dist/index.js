@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const openapi_validator_1 = require("openapi-validator");
+const openapi_validator_1 = require("@bfreuden/openapi-validator");
 const satisfyApiSpec_1 = __importDefault(require("./assertions/satisfyApiSpec"));
 const satisfySchemaInApiSpec_1 = __importDefault(require("./assertions/satisfySchemaInApiSpec"));
 function default_1(filepathOrObject) {
