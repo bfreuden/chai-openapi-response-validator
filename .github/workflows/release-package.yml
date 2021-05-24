@@ -12,9 +12,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: echo "@bfreuden:registry=https://npm.pkg.github.com" >  ~/.npmrc
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.READ_PACKAGES }}" >>  ~/.npmrc
       - run: npm ci
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.READ_PACKAGES}}
+#        env:
+#          NODE_AUTH_TOKEN: ${{secrets.READ_PACKAGES}}
       #- run: npm test
 
   publish-gpr:
